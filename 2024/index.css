@@ -62,6 +62,12 @@ th {
   flex: 1 0 0;
 }
 
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: 0.125em;
+}
+
 nav {
   position: fixed;
   background-color: #fff;
@@ -203,6 +209,11 @@ section#overview th {
 
 section#access th {
   width: 3rem;
+}
+
+section#staff th,
+section#staff td {
+  padding-right: 2rem;
 }
 
 footer {
