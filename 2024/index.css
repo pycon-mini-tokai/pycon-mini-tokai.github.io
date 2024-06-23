@@ -20,6 +20,15 @@ body {
   color: var(--color);
 }
 
+a,
+a:not([class]) {
+  color: var(--secondary-color-dark);
+}
+
+a:focus, a:hover {
+  color: var(--secondary-color-light);
+}
+
 th {
   text-align: left;
 }
@@ -62,6 +71,12 @@ th {
   flex: 1 0 0;
 }
 
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: 0.125em;
+}
+
 nav {
   position: fixed;
   background-color: #fff;
@@ -98,6 +113,7 @@ nav #links a {
   position: relative;
   font-weight: bold;
   text-decoration: none;
+  color: var(--color);
 }
 
 nav #links a::after {
@@ -203,6 +219,11 @@ section#overview th {
 
 section#access th {
   width: 3rem;
+}
+
+section#staff th,
+section#staff td {
+  padding-right: 2rem;
 }
 
 footer {
