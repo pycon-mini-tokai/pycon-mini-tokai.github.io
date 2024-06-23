@@ -20,6 +20,15 @@ body {
   color: var(--color);
 }
 
+a,
+a:not([class]) {
+  color: var(--secondary-color-dark);
+}
+
+a:focus, a:hover {
+  color: var(--secondary-color-light);
+}
+
 th {
   text-align: left;
 }
@@ -104,6 +113,7 @@ nav #links a {
   position: relative;
   font-weight: bold;
   text-decoration: none;
+  color: var(--color);
 }
 
 nav #links a::after {
