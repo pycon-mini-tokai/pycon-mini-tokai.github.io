@@ -29,6 +29,36 @@ a:focus, a:hover {
   color: var(--secondary-color-light);
 }
 
+a.button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  color: var(--color);
+  border: 1px solid #ffd026;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #ffd026, #ffea80, #ffd026);
+  background-size: 200% 100%;
+  animation: gradient-animation 2s linear infinite;
+  text-decoration: none;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+
+a.button:focus,
+a.button:hover {
+  background: #ffd026;
+  animation: none;
+}
+
 th {
   text-align: left;
 }
@@ -174,7 +204,7 @@ header .col {
 }
 
 header h1 {
-  margin-top: 40vh;
+  margin-top: 32vh;
   text-align: center;
 }
 
@@ -185,8 +215,13 @@ header h1 img {
 }
 
 header .lead {
-  font-size: max(min(3vw, 2rem), 1.3rem);
+  font-size: max(min(3vw, 2rem), 1.5rem);
   font-weight: bold;
+}
+
+header .lead a.button {
+  margin-top: 1rem;
+  font-size: 80%;
 }
 
 section {
