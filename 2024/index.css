@@ -266,3 +266,217 @@ footer {
   background-color: var(--footer-background-color);
   color: var(--footer-color);
 }
+
+/*******************************
+*** タイムテーブルのスタイル ***
+********************************/
+.sp-only {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+.center {
+  margin: 0 auto;
+}
+.table{
+  width: 90%;
+}
+.scroll-auto {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.table .flame {
+  width: 100%;
+  min-width: 700px;
+}
+.time1 {
+  font-weight: 700;
+}
+.time2 {
+  color: #555;
+}
+.list-name {
+  font-weight: 700;
+}
+.padding-none {
+  margin: -5px 0;
+}
+.event-box {
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 3px;
+  text-align: start;
+  margin: 5px;
+}
+.event-box:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+}
+.label {
+  width: fit-content;
+  padding: 5px 8px;
+  margin-bottom: 10px;
+  color: #fff;
+  margin-right: 3px;
+}
+.widest {
+  height: 560px;
+}
+.wider {
+  height: 365px;
+}
+.wide {
+  height:200px;
+}
+.narrow {
+  height:170px;
+}
+.lunch {
+  height: 100px;
+  margin: 5px 0;
+}
+.none {
+  opacity: 0;
+}
+.border-none {
+  border: none;
+}
+.keynote {
+  background-color: #5c5c5c;
+}
+.talk {
+  background-color: #427aaf;
+}
+.workshop {
+  background-color: #af42af;
+}
+.beginner {
+  background-color: #60AF42;
+}
+.intermediate {
+  background-color: #afa842;
+}
+.advanced {
+  background-color: #af4242;
+}
+.not-specified {
+  background-color: #ffffff;
+  color: #000;
+  border: #000 1px solid;
+}
+.event-box .name {
+  color: #555;
+}
+.event-box h3 {
+  text-align: start;
+}
+.table li {
+  padding: 10px;
+  place-content: center;
+}
+.table .time {
+  min-width: 50px;
+  text-align: end;
+}
+.table .time li {
+  border-bottom: #ddd 1px solid;
+}
+.table .time li:nth-last-child(1) {
+  border: none;
+}
+.table li:nth-child(1) {
+  /* 項目名 */
+  text-align: center;
+  border-bottom: #aaa 1px solid;
+}
+.table p {
+  margin: 0;
+}
+.table ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.table .hall-a {
+  width: 50%;
+}
+.table .hall-b {
+  width: 50%;
+}
+#talk_1 h3, #talk_7 h3 {
+  margin-top: 5px;
+}
+@media (max-width: 700px) {
+  .table{
+    width: 100%;
+  }
+  #talk_4 h3, #talk_6 h3 {
+    margin-top: 5px;
+  }
+}
+@media (max-width: 900px) {
+  .sp-only{
+    display: block;
+  }
+  .table{
+    max-width: 500px;
+  }
+}
+/********************************
+ *** タイムテーブルの詳細表示 ***
+ ************* ******************/
+#event_detail {
+  position:fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  width: 100%;
+  z-index: 3;
+  place-content: center;
+  display: none;
+}
+#detail_keynote img {
+  margin: 0 10px 0 0;
+  width: 70px;
+  background-color: #306998;
+}
+#event_detail .flame {
+  width:80%;
+  padding: 20px;
+  margin: auto;
+  background-color: #fff;
+  max-height: 80vh;
+  overflow: hidden;
+}
+.detail-size {
+  display: block;
+  height: 35vh;
+}
+#detail_close {
+  border-radius: 50%;
+  width:50px;
+  height: 50px;
+  font-size: 2rem;
+  background-color: rgb(255, 136, 0);
+  color: #fff;
+  text-align: center;
+  margin: 0 0 0 auto;
+}
+.line-top {
+  border-top: rgb(255, 136, 0) 2px solid;
+  margin: 10px 0;
+}
+#detail_close:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#detail_keynote, #detail_talk1, #detail_talk2, #detail_talk3, #detail_talk4, #detail_talk5, #detail_talk6, #detail_talk7, #detail_workshop1, #detail_workshop2, #detail_workshop3 {
+  display: none;
+}
+#event_detail .name {
+  color: #555;
+  text-align: right;
+}
