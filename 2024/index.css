@@ -473,7 +473,7 @@ footer {
   cursor: pointer;
   opacity: 0.8;
 }
-#detail_keynote, #detail_talk1, #detail_talk2, #detail_talk3, #detail_talk4, #detail_talk5, #detail_talk6, #detail_talk7, #detail_workshop1, #detail_workshop2, #detail_workshop3 {
+.event-detail-talk {
   display: none;
 }
 #event_detail .name {
