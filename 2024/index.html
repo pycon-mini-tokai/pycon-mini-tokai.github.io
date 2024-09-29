@@ -80,6 +80,7 @@
         <ul>
           <li><a href="#overview">開催概要</a></li>
           <li><a href="#access">会場案内</a></li>
+          <li><a href="#timetable">タイムテーブル</a></li>
           <li><a href="#coc">行動規範</a></li>
         </ul>
       </div>
@@ -353,10 +354,10 @@
           <div id="event_detail">
             <div class="flame">
               <div id="detail_close">×</div>
-              <div id="detail_keynote">
+              <div class="event-detail-talk" id="detail_keynote">
                 <div class="keynote label">キーノート</div>
                 <p class="time2">10:25～11:15</p>
-                <!--h4>キーノート</h4-->
+                <h4>キーノート</h4>
                 <p class="name">小田切 篤 (@aodag)</p>
                 <div class="flex">
                   <!-- <div><img src="" alt="ここに画像"></div> -->
@@ -365,12 +366,12 @@
                   </div>
                 </div>
               </div>
-              <div id="detail_talk1">
+              <div class="event-detail-talk" id="detail_talk_1">
                 <div class="talk label">トーク</div>
                 <p class="time2">11:30～12:00<br>（発表20分・質疑応答5分・機材準備5分）</p>
                 <h4>Python開発の変遷をPythonプロフェッショナルプログラミングの改定の歴史から知る</h4>
                 <p class="name">鈴木 たかのり</p>
-                <div class="scroll-auto detail-size"> 
+                <div class="scroll-auto detail-size">
                   私が所属するビープラウドが執筆する「Pythonプロフェッショナルプログラミング」は2012年の初版から改定を繰り返し、2024年に第4版が出版されました。<br><br>
                   本書には、ビープラウドがPythonでの開発を行う上での、当時のノウハウがまとめられています。版を重ねる中で、書籍からさまざまな内容が削除、変更、追加されています。<br><br>
                   本トークでは書籍の改定によって変更された内容を紹介しながら、Pythonでのチーム開発の歴史や進歩、変わったもの変わらないものについて見ていき、自身のプロジェクトに活用できる内容を知ることができます。
@@ -386,7 +387,7 @@
                   website: slides.takanory.net<br>
                 </div>
               </div>
-              <div id="detail_talk2">
+              <div class="event-detail-talk" id="detail_talk_2">
                 <div class="talk label">トーク</div>
                 <p class="time2">12:00～12:30<br>（発表20分・質疑応答5分・機材準備5分）</p>
                 <h4>pytestでRust製CLIをe2eテストしてみよう</h4>
@@ -409,7 +410,7 @@
                   <a href="https://github.com/attakei" target="_blank">https://github.com/attakei</a><br>
                 </div>
               </div>
-              <div id="detail_talk3">
+              <div class="event-detail-talk" id="detail_talk_3">
                 <div class="talk label">トーク</div>
                 <p class="time2">14:00～14:30<br>（発表20分・質疑応答5分・機材準備5分）</p>
                 <h4>Pythonはどうやってlen関数で長さを手にいれているの？</h4>
@@ -421,7 +422,7 @@
                   <br>株式会社ビープラウド所属。<br>一般社団法人PyCon JP Association会計理事。<br>2003年にZope2をきっかけにPythonを使い始めた。最近では、Python Boot CampでイベントでPython講師を務め、日本各地でPythonを広める活動を行っている。Python mini Hack-a-thonやSphinx-users.jpなどPython関連イベント運営のかたわら、カンファレンスや書籍、OSS開発を通じて技術情報を発信している。<br><br>著書／訳書：『エキスパートPythonプログラミング 改訂4版（2023 アスキードワンゴ）』『独学コンピューターサイエンティスト（2022年 日経BP社）』『Sphinxをはじめよう第3版（2022 オライリー・ジャパン）』『自走プログラマー（2020年 技術評論社刊）』『独学プログラマー（2018 日経BP社刊）
                 </div>
               </div>
-              <div id="detail_talk4">
+              <div class="event-detail-talk" id="detail_talk_4">
                 <div class="talk label">トーク</div>
                 <p class="time2">14:30～15:00<br>（発表20分・質疑応答5分・機材準備5分）</p>
                 <h4>Python(PYNQ)がテーマのAMD主催のFPGAコンテストに参加してきた</h4>
@@ -449,7 +450,7 @@
                 </div>
               </div>
 
-              <div id="detail_talk5">
+              <div class="event-detail-talk" id="detail_talk_5">
                 <div class="talk label">トーク</div>
                 <p class="time2">15:00～15:30<br>（発表20分・質疑応答5分・機材準備5分）</p>
                 <h4>Google Colaboratoryで試すVLM</h4>
@@ -467,7 +468,7 @@
                 </div>
               </div>
 
-              <div id="detail_talk6">
+              <div class="event-detail-talk" id="detail_talk_6">
                 <div class="talk label">トーク</div>
                 <p class="time2">15:45～16:15<br>（発表20分・質疑応答5分・機材準備5分）</p>
                 <h4>asgirefのクラスasgiref.local.Localは何のためにあるのか？</h4>
@@ -489,7 +490,7 @@
                 </div>
               </div>
 
-              <div id="detail_talk7">
+              <div class="event-detail-talk" id="detail_talk_7">
                 <div class="talk label">トーク</div>
                 <p class="time2">16:15～16:45<br>（発表20分・質疑応答5分・機材準備5分）</p>
                 <h4>ReflexによるPython onlyでの高速なWebアプリケーションプロトタイピング</h4>
@@ -502,7 +503,7 @@
                 </div>
               </div>
 
-              <div id="detail_workshop1">
+              <div class="event-detail-talk" id="detail_workshop_1">
                 <div class="workshop label">ワークショップ</div>
                 <p class="time2">11:30～12:30</p>
                 <h4>Streamlitで作るRAGチャットアプリ</h4>
@@ -517,7 +518,7 @@
                 </div>
               </div>
 
-              <div id="detail_workshop2">
+              <div class="event-detail-talk" id="detail_workshop_2">
                 <div class="workshop label">ワークショップ</div>
                 <p class="time2">14:00～15:30</p>
                 <h4>pytestを使ったテスト駆動開発を体験してみよう</h4>
@@ -542,7 +543,7 @@
                 </div>
               </div>
 
-              <div id="detail_workshop3">
+              <div class="event-detail-talk" id="detail_workshop_3">
                 <div class="workshop label">ワークショップ</div>
                 <p class="time2">15:45～16:45</p>
                 <h4>ノーコードデータ分析ツールで体験する時系列データ分析超入門</h4>
