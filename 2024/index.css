@@ -470,16 +470,16 @@ footer {
   text-align: center;
   margin: 0 0 0 auto;
 }
-.line-top {
-  border-top: rgb(255, 136, 0) 2px solid;
-  margin: 10px 0;
-}
 #detail_close:hover {
   cursor: pointer;
   opacity: 0.8;
 }
 .event-detail-talk {
   display: none;
+}
+.event-detail-talk hr {
+  margin-top: 10px;
+  border-top: rgb(255, 136, 0) 2px solid;
 }
 #event_detail .name {
   color: #555;
