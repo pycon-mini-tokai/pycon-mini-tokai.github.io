@@ -281,10 +281,7 @@ footer {
 }
 .table{
   width: 90%;
-}
-.scroll-auto {
   overflow-x: auto;
-  overflow-y: auto;
 }
 .table .flame {
   width: 100%;
@@ -456,10 +453,6 @@ footer {
   max-height: 80vh;
   overflow: hidden;
 }
-.detail-size {
-  display: block;
-  height: 35vh;
-}
 #detail_close {
   border-radius: 50%;
   width:50px;
@@ -476,6 +469,8 @@ footer {
 }
 .event-detail-talk {
   display: none;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
 }
 .event-detail-talk hr {
   margin-top: 10px;
