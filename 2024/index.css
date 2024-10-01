@@ -313,16 +313,17 @@ footer {
 }
 .event-box time {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   color: #555;
 }
 .event-box h3 {
-  margin: 0;
+  margin: 0 0 4px;
+  text-align: start;
 }
 .label {
   width: fit-content;
   padding: 5px 8px;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
   color: #fff;
   margin-right: 3px;
 }
@@ -373,9 +374,6 @@ footer {
 }
 .event-box .name {
   color: #555;
-}
-.event-box h3 {
-  text-align: start;
 }
 .table li {
   padding: 10px;
