@@ -163,7 +163,7 @@ nav #links a:hover::after {
   left: 0;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 900px) {
   nav #links {
     display: block;
   }
@@ -281,10 +281,7 @@ footer {
 }
 .table{
   width: 90%;
-}
-.scroll-auto {
   overflow-x: auto;
-  overflow-y: auto;
 }
 .table .flame {
   width: 100%;
@@ -314,10 +311,19 @@ footer {
   cursor: pointer;
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
 }
+.event-box time {
+  display: block;
+  margin-bottom: 4px;
+  color: #555;
+}
+.event-box h3 {
+  margin: 0 0 4px;
+  text-align: start;
+}
 .label {
   width: fit-content;
   padding: 5px 8px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   color: #fff;
   margin-right: 3px;
 }
@@ -369,9 +375,6 @@ footer {
 .event-box .name {
   color: #555;
 }
-.event-box h3 {
-  text-align: start;
-}
 .table li {
   padding: 10px;
   place-content: center;
@@ -404,9 +407,6 @@ footer {
 }
 .table .hall-b {
   width: 50%;
-}
-#talk_1 h3, #talk_7 h3 {
-  margin-top: 5px;
 }
 @media (max-width: 700px) {
   .table{
@@ -451,10 +451,6 @@ footer {
   max-height: 80vh;
   overflow: hidden;
 }
-.detail-size {
-  display: block;
-  height: 35vh;
-}
 #detail_close {
   border-radius: 50%;
   width:50px;
@@ -465,16 +461,18 @@ footer {
   text-align: center;
   margin: 0 0 0 auto;
 }
-.line-top {
-  border-top: rgb(255, 136, 0) 2px solid;
-  margin: 10px 0;
-}
 #detail_close:hover {
   cursor: pointer;
   opacity: 0.8;
 }
 .event-detail-talk {
   display: none;
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+.event-detail-talk hr {
+  margin-top: 10px;
+  border-top: rgb(255, 136, 0) 2px solid;
 }
 #event_detail .name {
   color: #555;
