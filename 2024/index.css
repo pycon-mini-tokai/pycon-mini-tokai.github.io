@@ -256,6 +256,19 @@ section#access th {
   width: 3rem;
 }
 
+section#keynote .col:first-child {
+  flex-grow: 4;
+  margin: auto 0;
+}
+
+section#keynote .col:nth-child(2) {
+  flex-grow: 6;
+}
+
+section#keynote img {
+  padding: 1rem;
+}
+
 section#staff th,
 section#staff td {
   padding-right: 2rem;
