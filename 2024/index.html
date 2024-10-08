@@ -380,10 +380,10 @@
               </ul><!-- hall-b ここまで -->
             </div>
           </div><!-- table ここまで -->
-          <div id="event_detail">
-            <div class="flame">
-              <div id="detail_close">×</div>
-              <div class="event-detail-talk" id="detail_keynote">
+          <div id="event-modal-background">
+            <div id="event-modal">
+              <div id="event-modal-close">×</div>
+              <div class="event-modal-talk" id="detail_keynote">
                 <div class="keynote label">キーノート</div>
                 <p class="time2">10:25～11:15</p>
                 <h4>キーノート</h4>
@@ -400,7 +400,7 @@
                   著書/訳書：『パーフェクトPython[改訂2版]（2020技術評論社）』
                 </div>
               </div>
-              <div class="event-detail-talk" id="detail_talk_1">
+              <div class="event-modal-talk" id="detail_talk_1">
                 <div class="talk label">トーク</div>
                 <p class="time2">11:30～11:55 （発表20分・質疑応答5分）</p>
                 <h4>Python開発の変遷をPythonプロフェッショナルプログラミングの改定の歴史から知る</h4>
@@ -419,7 +419,7 @@
                 twitter: @takanory<br>
                 website: slides.takanory.net
               </div>
-              <div class="event-detail-talk" id="detail_talk_2">
+              <div class="event-modal-talk" id="detail_talk_2">
                 <div class="talk label">トーク</div>
                 <p class="time2">12:00～12:25 （発表20分・質疑応答5分）</p>
                 <h4>pytestでRust製CLIをe2eテストしてみよう</h4>
@@ -441,7 +441,7 @@
                 <a href="https://bsky.app/profile/attakei.dev" target="_blank">https://bsky.app/profile/attakei.dev</a><br>
                 <a href="https://github.com/attakei" target="_blank">https://github.com/attakei</a><br>
               </div>
-              <div class="event-detail-talk" id="detail_talk_3">
+              <div class="event-modal-talk" id="detail_talk_3">
                 <div class="talk label">トーク</div>
                 <p class="time2">14:00～14:25 （発表20分・質疑応答5分）</p>
                 <h4>Pythonはどうやってlen関数で長さを手にいれているの？</h4>
@@ -451,7 +451,7 @@
                 <b>清水川 貴之</b>
                 <br>株式会社ビープラウド所属。<br>一般社団法人PyCon JP Association会計理事。<br>2003年にZope2をきっかけにPythonを使い始めた。最近では、Python Boot CampでイベントでPython講師を務め、日本各地でPythonを広める活動を行っている。Python mini Hack-a-thonやSphinx-users.jpなどPython関連イベント運営のかたわら、カンファレンスや書籍、OSS開発を通じて技術情報を発信している。<br><br>著書／訳書：『エキスパートPythonプログラミング 改訂4版（2023 アスキードワンゴ）』『独学コンピューターサイエンティスト（2022年 日経BP社）』『Sphinxをはじめよう第3版（2022 オライリー・ジャパン）』『自走プログラマー（2020年 技術評論社刊）』『独学プログラマー（2018 日経BP社刊）
               </div>
-              <div class="event-detail-talk" id="detail_talk_4">
+              <div class="event-modal-talk" id="detail_talk_4">
                 <div class="talk label">トーク</div>
                 <p class="time2">14:30～14:55 （発表20分・質疑応答5分）</p>
                 <h4>Python(PYNQ)がテーマのAMD主催のFPGAコンテストに参加してきた</h4>
@@ -477,7 +477,7 @@
                 <a href="https://www.youtube.com/@misojiengineer1104" target="_blank">https://www.youtube.com/@misojiengineer1104</a><br>
               </div>
 
-              <div class="event-detail-talk" id="detail_talk_5">
+              <div class="event-modal-talk" id="detail_talk_5">
                 <div class="talk label">トーク</div>
                 <p class="time2">15:00～15:25 （発表20分・質疑応答5分）</p>
                 <h4>Google Colaboratoryで試すVLM</h4>
@@ -494,7 +494,7 @@
                 GitHub（<a href="https://github.com/Kazuhito00" target="_blank">https://github.com/Kazuhito00</a>）やX（<a href="https://twitter.com/KzhtTkhs" target="_blank">https://twitter.com/KzhtTkhs</a>）にて、日々試したサンプルなどを公開
               </div>
 
-              <div class="event-detail-talk" id="detail_talk_6">
+              <div class="event-modal-talk" id="detail_talk_6">
                 <div class="talk label">トーク</div>
                 <p class="time2">15:45～16:10 （発表20分・質疑応答5分）</p>
                 <h4>asgirefのクラスasgiref.local.Localは何のためにあるのか？</h4>
@@ -515,7 +515,7 @@
                 - Pythonエンジニア育成推進協会監修 Python実践レシピ（<a href="https://gihyo.jp/book/2022/978-4-297-12576-9" target="_blank">https://gihyo.jp/book/2022/978-4-297-12576-9</a>）（共著）
               </div>
 
-              <div class="event-detail-talk" id="detail_talk_7">
+              <div class="event-modal-talk" id="detail_talk_7">
                 <div class="talk label">トーク</div>
                 <p class="time2">16:15～16:40 （発表20分・質疑応答5分）</p>
                 <h4>ReflexによるPython onlyでの高速なWebアプリケーションプロトタイピング</h4>
@@ -527,7 +527,7 @@
                 <br>2016年からNTTコミュニケーションズにてバックエンドエンジニアとして、主にクラウドやネットワークサービスのオーケストレーションを通じたサービス開発に従事。<br>バックエンドの開発を主軸としつつ、サービスの磨き込みのためのデータ収集や分析、エンジニア育成施策の企画や運用を行っている。
               </div>
 
-              <div class="event-detail-talk" id="detail_workshop_1">
+              <div class="event-modal-talk" id="detail_workshop_1">
                 <div class="workshop label">ワークショップ</div>
                 <p class="time2">11:30～12:30</p>
                 <h4>Streamlitで作るRAGチャットアプリ</h4>
@@ -541,7 +541,7 @@
                 言語はPython、C#あたりをメインで扱ってきました。<br>
               </div>
 
-              <div class="event-detail-talk" id="detail_workshop_2">
+              <div class="event-modal-talk" id="detail_workshop_2">
                 <div class="workshop label">ワークショップ</div>
                 <p class="time2">14:00～15:30</p>
                 <h4>pytestを使ったテスト駆動開発を体験してみよう</h4>
@@ -563,7 +563,7 @@
                 毎月のみんなのPython勉強会スタッフ。PyCon JP 2021座長
               </div>
 
-              <div class="event-detail-talk" id="detail_workshop_3">
+              <div class="event-modal-talk" id="detail_workshop_3">
                 <div class="workshop label">ワークショップ</div>
                 <p class="time2">15:45～16:45</p>
                 <h4>ノーコードデータ分析ツールで体験する時系列データ分析超入門</h4>
