@@ -289,15 +289,11 @@ footer {
 .flex {
   display: flex;
 }
-.center {
-  margin: 0 auto;
-}
-.table{
-  width: 90%;
+.table {
+  width: 100%;
   overflow-x: auto;
 }
-.table .flame {
-  width: 100%;
+.table > div {
   min-width: 700px;
 }
 .time1 {
@@ -424,17 +420,12 @@ a.event-box {
 .table .hall-b {
   width: 50%;
 }
-@media (max-width: 700px) {
-  .table{
-    width: 100%;
-  }
-}
 @media (max-width: 900px) {
-  .sp-only{
+  .sp-only {
     display: block;
   }
-  .table{
-    max-width: 500px;
+  #timetable .container:nth-child(2) {
+    max-width: none;
   }
 }
 /********************************
