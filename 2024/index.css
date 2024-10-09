@@ -312,7 +312,10 @@ footer {
 .padding-none {
   margin: -5px 0;
 }
-.event-box {
+a.event-box {
+  display: block;
+  text-decoration: none;
+  color: var(--color);
   border: 1px solid #ddd;
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
   background-color: #fff;
@@ -425,9 +428,6 @@ footer {
   .table{
     width: 100%;
   }
-  #talk_4 h3, #talk_6 h3 {
-    margin-top: 5px;
-  }
 }
 @media (max-width: 900px) {
   .sp-only{
@@ -455,7 +455,7 @@ footer {
   margin: auto;
   padding: 20px;
   width: 80%;
-  max-height: 80%;
+  max-height: 80vh;
   background-color: #fff;
   overflow: hidden;
 }
@@ -479,7 +479,7 @@ footer {
 }
 .event-modal-talk {
   display: none;
-  height: calc(100vh - 200px);
+  max-height: calc(80vh - 100px);
   overflow-y: auto;
 }
 .event-modal-talk hr {
