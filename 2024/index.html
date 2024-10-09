@@ -15,7 +15,6 @@
   <title>PyCon mini 東海 2024</title>
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./index.css">
-  <script src="./index.js" defer></script>
   <link rel="canonical" href="https://tokai.pycon.jp/2024/">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -207,9 +206,15 @@
       <div class="row">
         <div class="col">
           <h2>タイムテーブル</h2>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
           <p class="sp-only">※タイムテーブルは左右にスクロールできます。</p>
-          <div class="table center scroll-auto">
-            <div class="flex flame">
+          <div class="table scroll-auto">
+            <div class="flex">
               <ul class="time">
                 <li class="list-name">時間</li>
                 <li><p class="time1">9:30</p></li>
@@ -234,18 +239,18 @@
                 <li>受付</li>
                 <li>開会挨拶</li>
                 <li>
-                  <div class="event-box wide" id="keynote">
+                  <a class="event-box wide" href="#event-keynote">
                     <div class="flex">
                       <div class="keynote label">キーノート</div>
                     </div>
                     <time datetime="50m">50分間</time>
                     <h3>キーノート</h3>
                     <p class="name">小田切 篤 (@aodag)</p>
-                  </div>
+                  </a>
                 </li>
                 <li class="padding-none">休憩</li>
                 <li>
-                  <div class="event-box narrow" id="talk_1">
+                  <a class="event-box narrow" href="#event-talk-1">
                     <div class="flex">
                       <div class="talk label">トーク</div>
                       <div class="beginner label">初級</div>
@@ -253,10 +258,10 @@
                     <time datetime="25m">25分間</time>
                     <h3>Python開発の変遷をPythonプロフェッショナルプログラミングの改定の歴史から知る</h3>
                     <p class="name">鈴木 たかのり</p>
-                  </div>
+                  </a>
                 </li>
                 <li class="padding-none">
-                  <div class="event-box narrow" id="talk_2">
+                  <a class="event-box narrow" href="#event-talk-2">
                     <div class="flex">
                       <div class="talk label">トーク</div>
                       <div class="intermediate label">中級</div>
@@ -264,14 +269,14 @@
                     <time datetime="25m">25分間</time>
                     <h3>pytestでRust製CLIをe2eテスト<br>してみよう</h3>
                     <p class="name">Kazuya Takei (attakei)</p>
-                  </div>
+                  </a>
                 </li>
                 <li class="lunch">
                   <time datetime="90m">90分間</time>
                   ランチ
                 </li>
                 <li>
-                  <div class="event-box narrow" id="talk_3">
+                  <a class="event-box narrow" href="#event-talk-3">
                     <div class="flex">
                       <div class="talk label">トーク</div>
                       <div class="beginner label">初級</div>
@@ -279,10 +284,10 @@
                     <time datetime="25m">25分間</time>
                     <h3>Pythonはどうやってlen関数で長さを手にいれているの？</h3>
                     <p class="name">清水川 貴之</p>
-                  </div>
+                  </a>
                 </li>
                 <li class="padding-none">
-                  <div class="event-box narrow" id="talk_4">
+                  <a class="event-box narrow" href="#event-talk-4">
                     <div class="flex">
                       <div class="talk label">トーク</div>
                       <div class="intermediate label">中級</div>
@@ -290,10 +295,10 @@
                     <time datetime="25m">25分間</time>
                     <h3>Python(PYNQ)がテーマのAMD主催のFPGAコンテストに参加してきた</h3>
                     <p class="name">misoji engineer</p>
-                  </div>
+                  </a>
                 </li>
                 <li>
-                  <div class="event-box narrow" id="talk_5">
+                  <a class="event-box narrow" href="#event-talk-5">
                     <div class="flex">
                       <div class="talk label">トーク</div>
                       <div class="beginner label">初級</div>
@@ -301,11 +306,11 @@
                     <time datetime="25m">25分間</time>
                     <h3>Google Colaboratoryで試すVLM</h3>
                     <p class="name">高橋 かずひと</p>
-                  </div>
+                  </a>
                 </li>
                 <li class="padding-none">休憩</li>
                 <li>
-                  <div class="event-box narrow" id="talk_6">
+                  <a class="event-box narrow" href="#event-talk-6">
                     <div class="flex">
                       <div class="talk label">トーク</div>
                       <div class="intermediate label">中級</div>
@@ -313,10 +318,10 @@
                     <time datetime="25m">25分間</time>
                     <h3>asgirefのクラスasgiref.local.Localは何のためにあるのか？</h3>
                     <p class="name">筒井 隆次</p>
-                  </div>
+                  </a>
                 </li>
                 <li class="padding-none">
-                  <div class="event-box narrow" id="talk_7">
+                  <a class="event-box narrow" href="#event-talk-7">
                     <div class="flex">
                       <div class="talk label">トーク</div>
                       <div class="not-specified label">指定なし</div>
@@ -324,7 +329,7 @@
                     <time datetime="25m">25分間</time>
                     <h3>ReflexによるPython onlyでの高速なWebアプリケーションプロトタイピング</h3>
                     <p class="name">川瀬 弘嗣</p>
-                  </div>
+                  </a>
                 </li>
                 <li class="padding-none">休憩</li>
                 <li>閉会挨拶</li>
@@ -340,7 +345,7 @@
                 </li>
                 <li class="none">休憩</li>
                 <li>
-                  <div class="event-box wider" id="workshop_1">
+                  <a class="event-box wider" href="#event-workshop-1">
                     <div class="flex">
                       <div class="workshop label">ワークショップ</div>
                       <div class="beginner label">初級</div>
@@ -348,14 +353,14 @@
                     <time datetime="60m">60分間</time>
                     <h3>Streamlitで作るRAGチャットアプリ</h3>
                     <p class="name">ちひろ</p>
-                  </div>
+                  </a>
                 </li>
                 <li class="none lunch">
                   <time datetime="90m">90分間</time>
                   ランチ
                 </li>
                 <li class="padding-none">
-                  <div class="event-box widest" id="workshop_2">
+                  <a class="event-box widest" href="#event-workshop-2">
                     <div class="flex">
                       <div class="workshop label">ワークショップ</div>
                       <div class="intermediate label">中級</div>
@@ -363,11 +368,11 @@
                     <time datetime="60m">60分間</time>
                     <h3>pytestを使ったテスト駆動開発を<br>体験してみよう</h3>
                     <p class="name">nikkie</p>
-                  </div>
+                  </a>
                 </li>
                 <li class="none">休憩</li>
                 <li class="padding-none">
-                  <div class="event-box wider" id="workshop_3">
+                  <a class="event-box wider" href="#event-workshop-3">
                     <div class="flex">
                       <div class="workshop label">ワークショップ</div>
                       <div class="beginner label">初級</div>
@@ -375,21 +380,20 @@
                     <time datetime="60m">60分間</time>
                     <h3>ノーコードデータ分析ツールで体験する時系列データ分析超入門</h3>
                     <p class="name">丹野 良介</p>
-                  </div>
+                  </a>
                 </li>
               </ul><!-- hall-b ここまで -->
             </div>
           </div><!-- table ここまで -->
-          <div id="event_detail">
-            <div class="flame">
-              <div id="detail_close">×</div>
-              <div class="event-detail-talk" id="detail_keynote">
+          <div id="event-modal-background">
+            <div id="event-modal">
+              <div id="event-modal-close">×</div>
+              <div class="event-modal-talk" id="event-keynote">
                 <div class="keynote label">キーノート</div>
                 <p class="time2">10:25～11:15</p>
                 <h4>キーノート</h4>
                 <p class="name">小田切 篤 (@aodag)</p>
                 <div class="flex">
-                  <!-- <div><img src="" alt="ここに画像"></div> -->
                   <b>小田切 篤 (@aodag)</b><br>
                   Python使って四半世紀弱、もはや手足がPython。<br><br>
                   株式会社オープンコレクター所属。<br>
@@ -400,7 +404,7 @@
                   著書/訳書：『パーフェクトPython[改訂2版]（2020技術評論社）』
                 </div>
               </div>
-              <div class="event-detail-talk" id="detail_talk_1">
+              <div class="event-modal-talk" id="event-talk-1">
                 <div class="talk label">トーク</div>
                 <p class="time2">11:30～11:55 （発表20分・質疑応答5分）</p>
                 <h4>Python開発の変遷をPythonプロフェッショナルプログラミングの改定の歴史から知る</h4>
@@ -419,7 +423,7 @@
                 twitter: @takanory<br>
                 website: slides.takanory.net
               </div>
-              <div class="event-detail-talk" id="detail_talk_2">
+              <div class="event-modal-talk" id="event-talk-2">
                 <div class="talk label">トーク</div>
                 <p class="time2">12:00～12:25 （発表20分・質疑応答5分）</p>
                 <h4>pytestでRust製CLIをe2eテストしてみよう</h4>
@@ -441,7 +445,7 @@
                 <a href="https://bsky.app/profile/attakei.dev" target="_blank">https://bsky.app/profile/attakei.dev</a><br>
                 <a href="https://github.com/attakei" target="_blank">https://github.com/attakei</a><br>
               </div>
-              <div class="event-detail-talk" id="detail_talk_3">
+              <div class="event-modal-talk" id="event-talk-3">
                 <div class="talk label">トーク</div>
                 <p class="time2">14:00～14:25 （発表20分・質疑応答5分）</p>
                 <h4>Pythonはどうやってlen関数で長さを手にいれているの？</h4>
@@ -451,7 +455,7 @@
                 <b>清水川 貴之</b>
                 <br>株式会社ビープラウド所属。<br>一般社団法人PyCon JP Association会計理事。<br>2003年にZope2をきっかけにPythonを使い始めた。最近では、Python Boot CampでイベントでPython講師を務め、日本各地でPythonを広める活動を行っている。Python mini Hack-a-thonやSphinx-users.jpなどPython関連イベント運営のかたわら、カンファレンスや書籍、OSS開発を通じて技術情報を発信している。<br><br>著書／訳書：『エキスパートPythonプログラミング 改訂4版（2023 アスキードワンゴ）』『独学コンピューターサイエンティスト（2022年 日経BP社）』『Sphinxをはじめよう第3版（2022 オライリー・ジャパン）』『自走プログラマー（2020年 技術評論社刊）』『独学プログラマー（2018 日経BP社刊）
               </div>
-              <div class="event-detail-talk" id="detail_talk_4">
+              <div class="event-modal-talk" id="event-talk-4">
                 <div class="talk label">トーク</div>
                 <p class="time2">14:30～14:55 （発表20分・質疑応答5分）</p>
                 <h4>Python(PYNQ)がテーマのAMD主催のFPGAコンテストに参加してきた</h4>
@@ -477,7 +481,7 @@
                 <a href="https://www.youtube.com/@misojiengineer1104" target="_blank">https://www.youtube.com/@misojiengineer1104</a><br>
               </div>
 
-              <div class="event-detail-talk" id="detail_talk_5">
+              <div class="event-modal-talk" id="event-talk-5">
                 <div class="talk label">トーク</div>
                 <p class="time2">15:00～15:25 （発表20分・質疑応答5分）</p>
                 <h4>Google Colaboratoryで試すVLM</h4>
@@ -494,7 +498,7 @@
                 GitHub（<a href="https://github.com/Kazuhito00" target="_blank">https://github.com/Kazuhito00</a>）やX（<a href="https://twitter.com/KzhtTkhs" target="_blank">https://twitter.com/KzhtTkhs</a>）にて、日々試したサンプルなどを公開
               </div>
 
-              <div class="event-detail-talk" id="detail_talk_6">
+              <div class="event-modal-talk" id="event-talk-6">
                 <div class="talk label">トーク</div>
                 <p class="time2">15:45～16:10 （発表20分・質疑応答5分）</p>
                 <h4>asgirefのクラスasgiref.local.Localは何のためにあるのか？</h4>
@@ -515,7 +519,7 @@
                 - Pythonエンジニア育成推進協会監修 Python実践レシピ（<a href="https://gihyo.jp/book/2022/978-4-297-12576-9" target="_blank">https://gihyo.jp/book/2022/978-4-297-12576-9</a>）（共著）
               </div>
 
-              <div class="event-detail-talk" id="detail_talk_7">
+              <div class="event-modal-talk" id="event-talk-7">
                 <div class="talk label">トーク</div>
                 <p class="time2">16:15～16:40 （発表20分・質疑応答5分）</p>
                 <h4>ReflexによるPython onlyでの高速なWebアプリケーションプロトタイピング</h4>
@@ -527,7 +531,7 @@
                 <br>2016年からNTTコミュニケーションズにてバックエンドエンジニアとして、主にクラウドやネットワークサービスのオーケストレーションを通じたサービス開発に従事。<br>バックエンドの開発を主軸としつつ、サービスの磨き込みのためのデータ収集や分析、エンジニア育成施策の企画や運用を行っている。
               </div>
 
-              <div class="event-detail-talk" id="detail_workshop_1">
+              <div class="event-modal-talk" id="event-workshop-1">
                 <div class="workshop label">ワークショップ</div>
                 <p class="time2">11:30～12:30</p>
                 <h4>Streamlitで作るRAGチャットアプリ</h4>
@@ -541,7 +545,7 @@
                 言語はPython、C#あたりをメインで扱ってきました。<br>
               </div>
 
-              <div class="event-detail-talk" id="detail_workshop_2">
+              <div class="event-modal-talk" id="event-workshop-2">
                 <div class="workshop label">ワークショップ</div>
                 <p class="time2">14:00～15:30</p>
                 <h4>pytestを使ったテスト駆動開発を体験してみよう</h4>
@@ -563,7 +567,7 @@
                 毎月のみんなのPython勉強会スタッフ。PyCon JP 2021座長
               </div>
 
-              <div class="event-detail-talk" id="detail_workshop_3">
+              <div class="event-modal-talk" id="event-workshop-3">
                 <div class="workshop label">ワークショップ</div>
                 <p class="time2">15:45～16:45</p>
                 <h4>ノーコードデータ分析ツールで体験する時系列データ分析超入門</h4>
@@ -708,5 +712,6 @@
     </div>
   </div>
 </footer>
+<script src="./index.js"></script>
 </body>
 </html>

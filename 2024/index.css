@@ -289,15 +289,11 @@ footer {
 .flex {
   display: flex;
 }
-.center {
-  margin: 0 auto;
-}
-.table{
-  width: 90%;
+.table {
+  width: 100%;
   overflow-x: auto;
 }
-.table .flame {
-  width: 100%;
+.table > div {
   min-width: 700px;
 }
 .time1 {
@@ -312,7 +308,10 @@ footer {
 .padding-none {
   margin: -5px 0;
 }
-.event-box {
+a.event-box {
+  display: block;
+  text-decoration: none;
+  color: var(--color);
   border: 1px solid #ddd;
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
   background-color: #fff;
@@ -421,50 +420,37 @@ footer {
 .table .hall-b {
   width: 50%;
 }
-@media (max-width: 700px) {
-  .table{
-    width: 100%;
-  }
-  #talk_4 h3, #talk_6 h3 {
-    margin-top: 5px;
-  }
-}
 @media (max-width: 900px) {
-  .sp-only{
+  .sp-only {
     display: block;
   }
-  .table{
-    max-width: 500px;
+  #timetable .container:nth-child(2) {
+    max-width: none;
   }
 }
 /********************************
  *** タイムテーブルの詳細表示 ***
  ************* ******************/
-#event_detail {
-  position:fixed;
+#event-modal-background {
+  position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  height: 100vh;
+  height: 100%;
   width: 100%;
   z-index: 3;
   place-content: center;
   display: none;
 }
-#detail_keynote img {
-  margin: 0 10px 0 0;
-  width: 70px;
-  background-color: #306998;
-}
-#event_detail .flame {
-  width:80%;
-  padding: 20px;
+#event-modal {
   margin: auto;
-  background-color: #fff;
+  padding: 20px;
+  width: 80%;
   max-height: 80vh;
+  background-color: #fff;
   overflow: hidden;
 }
-#detail_close {
+#event-modal-close {
   border-radius: 50%;
   width:50px;
   height: 50px;
@@ -474,20 +460,20 @@ footer {
   text-align: center;
   margin: 0 0 0 auto;
 }
-#detail_close:hover {
-  cursor: pointer;
+#event-modal-close:focus,
+#event-modal-close:hover {
   opacity: 0.8;
 }
-.event-detail-talk {
-  display: none;
-  height: calc(100vh - 200px);
-  overflow-y: auto;
-}
-.event-detail-talk hr {
-  margin-top: 10px;
-  border-top: rgb(255, 136, 0) 2px solid;
-}
-#event_detail .name {
+#event-modal .name {
   color: #555;
   text-align: right;
+}
+.event-modal-talk {
+  display: none;
+  max-height: calc(80vh - 100px);
+  overflow-y: auto;
+}
+.event-modal-talk hr {
+  margin-top: 10px;
+  border-top: rgb(255, 136, 0) 2px solid;
 }
