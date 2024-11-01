@@ -296,6 +296,12 @@ section#sponsor h3 {
   width: 100%;
 }
 
+.sponsor p {
+  text-align: left;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+
 .patron h4 {
   text-align: center;
   font-size: 1.15rem;
