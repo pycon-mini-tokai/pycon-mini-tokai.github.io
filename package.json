@@ -18,5 +18,10 @@
   "description": "",
   "devDependencies": {
     "prettier": "^3.5.3"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "semi": true,
+    "endOfLine": "lf"
   }
 }
