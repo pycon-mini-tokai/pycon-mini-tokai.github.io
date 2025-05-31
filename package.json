@@ -1,0 +1,27 @@
+{
+  "name": "pycon-mini-tokai-website",
+  "version": "1.0.0",
+  "scripts": {
+    "format": "prettier --write '**/*.{js,css,html}'",
+    "format:check": "prettier --check '**/*.{js,css,html}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ymyzk/pycon-mini-tokai.git"
+  },
+  "author": "PyCon mini Tokai Organizing Committee <pycon.mini.tokai@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/ymyzk/pycon-mini-tokai/issues"
+  },
+  "homepage": "https://github.com/ymyzk/pycon-mini-tokai#readme",
+  "description": "",
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "semi": true,
+    "endOfLine": "lf"
+  }
+}
