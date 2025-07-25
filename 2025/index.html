@@ -93,6 +93,22 @@
       twq("config", "op7kh");
     </script>
     <!-- End Twitter conversion tracking base code -->
+
+    <!-- Adobe Fonts -->
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'yxl6yvo',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <!-- End Adobe Fonts -->
+
+    <script src="./index.js" defer></script>
+
   </head>
   <body>
     <nav>
@@ -115,25 +131,37 @@
     </nav>
     <header>
       <div class="container row">
-        <div class="col">
-          <h1><img src="assets/logo.svg" alt="PyCon mini 東海のロゴ" /></h1>
+        <div class="col helvetica-neue">
+          <h1>
+            P<span class="y">y</span>Con<br>
+            <span class="mini-tokai">mini <span class="tokai">東海</span></span>
+          </h1>
           <div class="lead">
-            2025.11.08 @名古屋<br />
-            <a
-              class="button"
-              href="https://docs.google.com/document/d/e/2PACX-1vQVFZOmJbFFjtjPSZ-YlV5lV40mdXmMZ_cDQGh40tryTCiBYoN1DDCvXyjIMl5FRlO_JtrclL49gciq/pub"
-              target="_blank"
-              rel="noopener noreferer"
-              >発表者募集中</a
-            >
-            <a
-              class="button"
-              href="https://docs.google.com/document/d/e/2PACX-1vQAUqr4XUI-BCXMWa9TXMVQf1r7pewttUlOBjIqDvjMA9KNrp3A4WMHrctiALObSXyaq9i4MbdW9KN9/pub"
-              target="_blank"
-              rel="noopener noreferer"
-              >スポンサー募集中</a
-            >
+            <span class="helvetica-neue">2025</span>
+            <span class="helvetica-neue month">11</span>
+            月
+            <span class="helvetica-neue day">8</span>
+            日
+            （土）<br>
+            <span class="helvetica-neue time">10:00~</span><br>
+
+            <span class="place">Nagoya Sakae</span><br>
+            <span class="recruiting">プロポーザル・スポンサー募集中</span>
+            <!--
+            <span class="place2">中日ビル6F</span><br>
+            <span class="place3">中日ホール＆カンファレンス</span>
+            -->
           </div>
+        </div>
+        <div class="images pc-only">
+          <img class="parallelogram slidein" src="./assets/images/top1.jpg">
+          <img class="parallelogram slidein" src="./assets/images/top2.jpg">
+          <img class="parallelogram slidein" src="./assets/images/top3.jpg">
+        </div>
+        <div class="images sp-only">
+          <img class="parallelogram slidein" src="./assets/images/sp/top1-sp.jpg">
+          <img class="parallelogram slidein" src="./assets/images/sp/top2-sp.jpg">
+          <img class="parallelogram slidein" src="./assets/images/sp/top3-sp.jpg">
         </div>
       </div>
     </header>
@@ -141,76 +169,145 @@
       <section id="overview">
         <div class="container">
           <div class="row">
-            <div class="col">
-              <h2>開催概要</h2>
-              <p>
+            <div class="col text triangle2">
+              <h2>
+                <span>Pythonistaのための<br class="sp-600">技術カンファレンス、</span><br>
+                Pythonを語り、<br class="sp-600">コミュニティを築く。
+              </h2>
+              <p class="explanation">
                 PyCon mini 東海 2025
-                は、昨年に引き続き名古屋市で開催される、Pythonコミュニティのための技術カンファレンスです。全国各地からアクセスしやすい東海地方を舞台に、Pythonに関する最新情報の共有と、日本各地のPythonistaが交流を深められる場の提供を目指しています。
-              </p>
-              <p>
+                は、昨年に引き続き名古屋市で開催される、Pythonコミュニティのための技術カンファレンスです。全国各地からアクセスしやすい東海地方を舞台に、Pythonに関する最新情報の共有と、日本各地のPythonistaが交流を深められる場の提供を目指しています。<br><br>
+              
                 ぜひこの機会に名古屋でPythonの魅力に触れ、新しい知識と交流を深めていただければ幸いです。皆さんのご参加を心よりお待ちしております。
               </p>
-              <p>
-                参加登録は後日開始いたします。<a href="#news">最新情報</a
-                >の更新をぜひお待ちください。
-              </p>
+
               <table>
-                <tr>
-                  <th>開催日</th>
-                  <td>2025年11月8日 (土)</td>
+                <tr class="date">
+                  <td colspan="2" class="blue-line">
+                    <span class="helvetica-neue">2025</span>
+                    <span class="helvetica-neue month">11</span>
+                    月
+                    <span class="helvetica-neue day">8</span>
+                    日
+                    （土）
+                    <span class="helvetica-neue time">10:00~</span>
+                  </td>
                 </tr>
-                <tr>
-                  <th>会場</th>
-                  <td>中日ホール&amp;カンファレンス</td>
+                <tr class="place">
+                  <td colspan="2">
+                    <a href="#access" class="blue-line">中日ホール&amp;カンファレンス</a>
+                  </td>
                 </tr>
-                <tr>
-                  <th>主催</th>
-                  <td>PyCon mini 東海 実行委員会</td>
-                </tr>
-                <tr>
-                  <th>共催</th>
+                <tr class="organization">
                   <td>
-                    <a
-                      href="https://www.pycon.jp/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >一般社団法人PyCon JP Association</a
-                    >
+                    <span class="blue-line">主催: PyCon mini 東海 実行委員会</span>
+                  </td>
+                </tr>
+                <tr class="co-host">
+                  <td>
+                    <span class="blue-line">
+                      共催: 
+                      <a
+                        href="https://www.pycon.jp/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        一般社団法人PyCon JP Association
+                      </a>
+                    </span>
                   </td>
                 </tr>
               </table>
+
+              <p class="cautionary orange-line">事前登録&amp;専用コードが必要です。続報をお楽しみに！</p>
+
+              <div id="news">
+                <h2 class="helvetica-neue">Coming soon...</h2>
+
+                <p>
+                  最新情報はXでもチェックできます。ぜひフォローしてください!
+                </p>
+
+                <p class="comment">
+                  最新情報を発信中！
+                </p>
+
+                <a
+                  href="https://twitter.com/intent/follow?screen_name=PyConTokai"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="custom-follow-btn"
+                >
+                  <!-- Xロゴ SVG -->
+                  <svg viewBox="0 0 24 24" aria-hidden="true" class="x-logo"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" style="fill:white;"></path></g></svg>
+                  &#64;PyCon Tokai をチェック！
+                </a>
+              </div>
+            </div>
+
+            <div class="col images triangle triangle2">
+              <div class="">
+                <div class="label slidein">
+                  <p class="label-parallelogram" helvetica-neue><em>Workshop</em></p>
+                  <img class="parallelogram pc-only" src="./assets/images/workshop.jpg">
+                  <img class="parallelogram sp-only" src="./assets/images/sp/workshop-sp.jpg">
+                </div>
+                <div class="label slidein">
+                  <p class="label-parallelogram helvetica-neue"><em>Talk</em></p>
+                  <img class="parallelogram pc-only" src="./assets/images/talk.jpg">
+                  <img class="parallelogram sp-only" src="./assets/images/sp/talk-sp.jpg">
+                </div>
+                <div class="label slidein">
+                  <p class="label-parallelogram helvetica-neue"><em>Proposer</em></p>
+                  <img class="parallelogram pc-only" src="./assets/images/proposer.jpg">
+                  <img class="parallelogram sp-only" src="./assets/images/sp/proposer-sp.jpg">
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="news">
+
+      <section id="event-track" class="gradation-line">
         <div class="container">
           <div class="row">
-            <div class="col">
-              <h2>最新情報</h2>
-              <p>
-                最新情報は X (Twitter)
-                でも発信しています。ぜひフォローしてください!
+            <div class="col pickup triangle2 triangle">
+              <p class="bg-text helvetica-neue">
+                Our 2024<br>
+                event<br>
+                track<br>
+                record
               </p>
-              <p style="text-align: center">
-                <a
-                  href="https://twitter.com/PyConTokai?ref_src=twsrc%5Etfw"
-                  class="twitter-follow-button"
-                  data-size="large"
-                  data-dnt="true"
-                  data-show-count="false"
-                  >Follow @PyConTokai</a
-                >
-                <script
-                  async
-                  src="https://platform.twitter.com/widgets.js"
-                  charset="utf-8"
-                ></script>
+              <div class="visitors">
+                <p class="text kozuka-gothic">来場者数</p>
+                <p class="numbers kozuka-gothic">
+                  <span class="helvetica-neue">53</span>名
+                </p>
+                <small>
+                  ※スポンサー、スタッフなど関係者を含む
+                </small>
+              </div>
+              <div class="images">
+                <img src="./assets/images/coffee.png">
+                <img src="./assets/images/lottery.png">
+                <img src="./assets/images/social-gathering.png">
+                <img src="./assets/images/workshop-talk.png">
+              </div>
+            </div>
+            <div class="col explanation">
+              <h2>昨年の感謝を胸に、<br class="sp-600">今年はもっと。</h2>
+              <p class="text">
+                PyCon mini 東海 は昨年初めて開催されました。<br>
+                昨年の開催状況を本イベントの座長（りょう）がブログで公開しています！<br>
+                昨年はスポンサー様のご支援により、豪華なお弁当やコーヒーサービス、<br class="sp-only">抽選会などを実施することができました。関係者の皆様に心より感謝申し上げます。<br><br>
+
+                会場の雰囲気や発表概要などに興味がある方は、ぜひ<a href="https://pyconjp.blogspot.com/2025/01/pycon-mini-2024.html" target="_blank" rel="noopener noreferrer">こちら</a>からブログをご覧ください！<br>
               </p>
             </div>
           </div>
         </div>
       </section>
+
       <section id="access">
         <div class="container">
           <div class="row">
@@ -261,6 +358,28 @@
           </div>
         </div>
       </section>
+
+      <section id="keynote">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>キーノート</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img src="./assets/keynote.jpg" srcset="./assets/keynote@2x.jpg 2x" alt="キーノートスピーカーの[***] 氏のプロフィール写真" >
+            </div>
+            <div class="col">
+              <h3>name</h3>
+              <p>
+                text
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="timetable">
         <div class="container">
           <div class="row">
@@ -283,6 +402,7 @@
           </div>
         </div>
       </section>
+
       <section id="sponsor">
         <div class="container">
           <div class="row">
@@ -327,22 +447,7 @@
           </div>
         </div>
       </section>
-      <section id="coc">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>行動規範</h2>
-              <p>
-                PyCon mini 東海 2025のすべての参加者
-                (参加者、発表者、スタッフ、スポンサーなどを含む) は、<a
-                  href="./coc"
-                  >PyCon mini 東海 Code of Conduct</a
-                >を守る必要があります。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <section id="staff">
         <div class="container">
           <div class="row">
@@ -444,15 +549,31 @@
           </div>
         </div>
       </section>
+
+      <section id="coc">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>行動規範</h2>
+              <p>
+                PyCon mini 東海 2025のすべての参加者
+                (参加者、発表者、スタッフ、スポンサーなどを含む) は、<a
+                  href="./coc"
+                  >PyCon mini 東海 Code of Conduct</a
+                >を守る必要があります。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="contact">
         <div class="container">
           <div class="row">
             <div class="col">
               <h2>お問い合わせ</h2>
               本イベントに関するお問い合わせは
-              <a href="mailto:pycon.mini.tokai@gmail.com"
-                >pycon.mini.tokai@gmail.com</a
-              >
+              <a href="mailto:pycon.mini.tokai@gmail.com">pycon.mini.tokai@gmail.com</a>
               までお願いいたします。ボランティアによる運営のため、返信まで時間を要する場合があることをご了承ください。
             </div>
           </div>
