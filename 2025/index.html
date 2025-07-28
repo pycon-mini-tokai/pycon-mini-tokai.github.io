@@ -96,19 +96,39 @@
 
     <!-- Adobe Fonts -->
     <script>
-      (function(d) {
+      (function (d) {
         var config = {
-          kitId: 'yxl6yvo',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            kitId: "yxl6yvo",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
       })(document);
     </script>
     <!-- End Adobe Fonts -->
 
     <script src="./index.js" defer></script>
-
   </head>
   <body>
     <nav>
@@ -140,11 +160,10 @@
             <span class="english-font month">11</span>
             月
             <span class="english-font day">8</span>
-            日
-            （土）<br>
-            <span class="english-font time">10:00~</span><br>
+            日 （土）<br />
+            <span class="english-font time">10:00~</span><br />
 
-            <span class="place">Nagoya Sakae</span><br>
+            <span class="place">Nagoya Sakae</span><br />
             <span class="recruiting">プロポーザル・スポンサー募集中</span>
             <!--
             <span class="place2">中日ビル6F</span><br>
@@ -153,14 +172,32 @@
           </div>
         </div>
         <div class="images pc-only">
-          <img class="parallelogram scroll-animation" src="./assets/images/top1.jpg">
-          <img class="parallelogram scroll-animation" src="./assets/images/top2.jpg">
-          <img class="parallelogram scroll-animation" src="./assets/images/top3.jpg">
+          <img
+            class="parallelogram scroll-animation"
+            src="./assets/images/top1.jpg"
+          />
+          <img
+            class="parallelogram scroll-animation"
+            src="./assets/images/top2.jpg"
+          />
+          <img
+            class="parallelogram scroll-animation"
+            src="./assets/images/top3.jpg"
+          />
         </div>
         <div class="images sp-only">
-          <img class="parallelogram scroll-animation" src="./assets/images/sp/top1-sp.jpg">
-          <img class="parallelogram scroll-animation" src="./assets/images/sp/top2-sp.jpg">
-          <img class="parallelogram scroll-animation" src="./assets/images/sp/top3-sp.jpg">
+          <img
+            class="parallelogram scroll-animation"
+            src="./assets/images/sp/top1-sp.jpg"
+          />
+          <img
+            class="parallelogram scroll-animation"
+            src="./assets/images/sp/top2-sp.jpg"
+          />
+          <img
+            class="parallelogram scroll-animation"
+            src="./assets/images/sp/top3-sp.jpg"
+          />
         </div>
       </div>
     </header>
@@ -170,13 +207,17 @@
           <div class="row">
             <div class="col text secondary-deco">
               <h2>
-                <span>Pythonistaのための<br class="sp-600">技術カンファレンス、</span><br>
-                Pythonを語り、<br class="sp-600">コミュニティを築く。
+                <span
+                  >Pythonistaのための<br
+                    class="sp-600"
+                  />技術カンファレンス、</span
+                ><br />
+                Pythonを語り、<br class="sp-600" />コミュニティを築く。
               </h2>
               <p class="description">
                 PyCon mini 東海 2025
-                は、昨年に引き続き名古屋市で開催される、Pythonコミュニティのための技術カンファレンスです。全国各地からアクセスしやすい東海地方を舞台に、Pythonに関する最新情報の共有と、日本各地のPythonistaが交流を深められる場の提供を目指しています。<br><br>
-              
+                は、昨年に引き続き名古屋市で開催される、Pythonコミュニティのための技術カンファレンスです。全国各地からアクセスしやすい東海地方を舞台に、Pythonに関する最新情報の共有と、日本各地のPythonistaが交流を深められる場の提供を目指しています。<br /><br />
+
                 ぜひこの機会に名古屋でPythonの魅力に触れ、新しい知識と交流を深めていただければ幸いです。皆さんのご参加を心よりお待ちしております。
               </p>
 
@@ -187,14 +228,15 @@
                     <span class="english-font month">11</span>
                     月
                     <span class="english-font day">8</span>
-                    日
-                    （土）
+                    日 （土）
                     <span class="english-font time">10:00~</span>
                   </td>
                 </tr>
                 <tr class="place">
                   <td colspan="2">
-                    <a href="#access" class="line">中日ホール&amp;カンファレンス</a>
+                    <a href="#access" class="line"
+                      >中日ホール&amp;カンファレンス</a
+                    >
                   </td>
                 </tr>
                 <tr class="organizer">
@@ -205,12 +247,12 @@
                 <tr class="co-host">
                   <td>
                     <span class="line">
-                      共催: 
+                      共催:
                       <a
                         href="https://www.pycon.jp/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        >
+                      >
                         一般社団法人PyCon JP Association
                       </a>
                     </span>
@@ -218,7 +260,9 @@
                 </tr>
               </table>
 
-              <p class="cautionary secondary-line">事前登録&amp;専用コードが必要です。続報をお楽しみに！</p>
+              <p class="cautionary secondary-line">
+                事前登録&amp;専用コードが必要です。続報をお楽しみに！
+              </p>
 
               <div id="news">
                 <h2 class="english-font">Coming soon...</h2>
@@ -227,9 +271,7 @@
                   最新情報はXでもチェックできます。ぜひフォローしてください!
                 </p>
 
-                <p class="comment">
-                  最新情報を発信中！
-                </p>
+                <p class="comment">最新情報を発信中！</p>
 
                 <a
                   href="https://twitter.com/intent/follow?screen_name=PyConTokai"
@@ -238,7 +280,14 @@
                   class="custom-follow-btn"
                 >
                   <!-- Xロゴ SVG -->
-                  <svg viewBox="0 0 24 24" aria-hidden="true" class="x-logo"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" style="fill:white;"></path></g></svg>
+                  <svg viewBox="0 0 24 24" aria-hidden="true" class="x-logo">
+                    <g>
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                        style="fill: white"
+                      ></path>
+                    </g>
+                  </svg>
                   &#64;PyCon Tokai をチェック！
                 </a>
               </div>
@@ -247,19 +296,41 @@
             <div class="col images deco secondary-deco">
               <div class="">
                 <div class="label scroll-animation">
-                  <p class="label-parallelogram english-font"><em>Workshop</em></p>
-                  <img class="parallelogram pc-only" src="./assets/images/workshop.jpg">
-                  <img class="parallelogram sp-only" src="./assets/images/sp/workshop-sp.jpg">
+                  <p class="label-parallelogram english-font">
+                    <em>Workshop</em>
+                  </p>
+                  <img
+                    class="parallelogram pc-only"
+                    src="./assets/images/workshop.jpg"
+                  />
+                  <img
+                    class="parallelogram sp-only"
+                    src="./assets/images/sp/workshop-sp.jpg"
+                  />
                 </div>
                 <div class="label scroll-animation">
                   <p class="label-parallelogram english-font"><em>Talk</em></p>
-                  <img class="parallelogram pc-only" src="./assets/images/talk.jpg">
-                  <img class="parallelogram sp-only" src="./assets/images/sp/talk-sp.jpg">
+                  <img
+                    class="parallelogram pc-only"
+                    src="./assets/images/talk.jpg"
+                  />
+                  <img
+                    class="parallelogram sp-only"
+                    src="./assets/images/sp/talk-sp.jpg"
+                  />
                 </div>
                 <div class="label scroll-animation">
-                  <p class="label-parallelogram english-font"><em>Presenter</em></p>
-                  <img class="parallelogram pc-only" src="./assets/images/presenter.jpg">
-                  <img class="parallelogram sp-only" src="./assets/images/sp/presenter-sp.jpg">
+                  <p class="label-parallelogram english-font">
+                    <em>Presenter</em>
+                  </p>
+                  <img
+                    class="parallelogram pc-only"
+                    src="./assets/images/presenter.jpg"
+                  />
+                  <img
+                    class="parallelogram sp-only"
+                    src="./assets/images/sp/presenter-sp.jpg"
+                  />
                 </div>
               </div>
             </div>
@@ -272,35 +343,38 @@
           <div class="row">
             <div class="col pickup secondary-deco deco">
               <p class="bg-text english-font">
-                Our 2024<br>
-                event<br>
-                track<br>
+                Our 2024<br />
+                event<br />
+                track<br />
                 record
               </p>
               <div class="visitors">
                 <p class="text">来場者数</p>
-                <p class="numbers">
-                  <span class="english-font">53</span>名
-                </p>
-                <small>
-                  ※スポンサー、スタッフなど関係者を含む
-                </small>
+                <p class="numbers"><span class="english-font">53</span>名</p>
+                <small> ※スポンサー、スタッフなど関係者を含む </small>
               </div>
               <div class="images">
-                <img src="./assets/images/coffee.png">
-                <img src="./assets/images/lottery.png">
-                <img src="./assets/images/social-gathering.png">
-                <img src="./assets/images/workshop-talk.png">
+                <img src="./assets/images/coffee.png" />
+                <img src="./assets/images/lottery.png" />
+                <img src="./assets/images/social-gathering.png" />
+                <img src="./assets/images/workshop-talk.png" />
               </div>
             </div>
             <div class="col description">
-              <h2>昨年の感謝を胸に、<br class="sp-600">今年はもっと。</h2>
+              <h2>昨年の感謝を胸に、<br class="sp-600" />今年はもっと。</h2>
               <p class="text">
-                PyCon mini 東海 は昨年初めて開催されました。<br>
-                昨年の開催状況を本イベントの座長（りょう）がブログで公開しています！<br>
-                昨年はスポンサー様のご支援により、豪華なお弁当やコーヒーサービス、<br class="sp-only">抽選会などを実施することができました。関係者の皆様に心より感謝申し上げます。<br><br>
+                PyCon mini 東海 は昨年初めて開催されました。<br />
+                昨年の開催状況を本イベントの座長（りょう）がブログで公開しています！<br />
+                昨年はスポンサー様のご支援により、豪華なお弁当やコーヒーサービス、<br
+                  class="sp-only"
+                />抽選会などを実施することができました。関係者の皆様に心より感謝申し上げます。<br /><br />
 
-                会場の雰囲気や発表概要などに興味がある方は、ぜひ<a href="https://pyconjp.blogspot.com/2025/01/pycon-mini-2024.html" target="_blank" rel="noopener noreferrer">こちら</a>からブログをご覧ください！<br>
+                会場の雰囲気や発表概要などに興味がある方は、ぜひ<a
+                  href="https://pyconjp.blogspot.com/2025/01/pycon-mini-2024.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >こちら</a
+                >からブログをご覧ください！<br />
               </p>
             </div>
           </div>
@@ -367,13 +441,15 @@
           </div>
           <div class="row">
             <div class="col">
-              <img src="./assets/keynote.jpg" srcset="./assets/keynote@2x.jpg 2x" alt="キーノートスピーカーの[***] 氏のプロフィール写真" >
+              <img
+                src="./assets/keynote.jpg"
+                srcset="./assets/keynote@2x.jpg 2x"
+                alt="キーノートスピーカーの[***] 氏のプロフィール写真"
+              />
             </div>
             <div class="col">
               <h3>name</h3>
-              <p>
-                text
-              </p>
+              <p>text</p>
             </div>
           </div>
         </div>
@@ -572,7 +648,9 @@
             <div class="col">
               <h2>お問い合わせ</h2>
               本イベントに関するお問い合わせは
-              <a href="mailto:pycon.mini.tokai@gmail.com">pycon.mini.tokai@gmail.com</a>
+              <a href="mailto:pycon.mini.tokai@gmail.com"
+                >pycon.mini.tokai@gmail.com</a
+              >
               までお願いいたします。ボランティアによる運営のため、返信まで時間を要する場合があることをご了承ください。
             </div>
           </div>
