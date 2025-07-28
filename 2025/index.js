@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const targets = document.querySelectorAll('.slidein');
+  const targets = document.querySelectorAll('.scroll-animation');
 
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
