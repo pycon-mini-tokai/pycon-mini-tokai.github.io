@@ -284,6 +284,7 @@ section#keynote .col:nth-child(2) {
 }
 
 section#keynote img {
+  margin: 0 auto;
   padding: 1rem;
 }
 
