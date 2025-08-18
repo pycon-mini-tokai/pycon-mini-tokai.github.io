@@ -650,6 +650,21 @@ section table {
   padding-top: 50px;
 }
 
+section h4 {
+  text-align: center;
+}
+
+section .col h2,
+h4 {
+  margin: 0;
+  border: none;
+  padding: 1px;
+}
+
+section .col h4 {
+  margin-bottom: 1rem;
+}
+
 #overview {
   padding-top: 70px;
   position: relative;
