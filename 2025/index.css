@@ -661,6 +661,15 @@ h4 {
   padding: 1px;
 }
 
+section .col h2 {
+  letter-spacing: 3px;
+}
+
+section#overview h2,
+section#event-track h2 {
+  letter-spacing: normal;
+}
+
 section .col h4 {
   margin-bottom: 1rem;
 }
