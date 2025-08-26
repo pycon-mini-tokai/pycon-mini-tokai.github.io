@@ -210,6 +210,7 @@ th {
   width: 1.5em;
   height: 1.5em;
   vertical-align: 0.125em;
+  object-fit: contain;
 }
 
 .english-font {
@@ -1216,6 +1217,38 @@ section .col h4 {
   #event-track .description .text {
     padding-top: 100px;
   }
+}
+
+#access {
+  background-image: image-set(
+    url("./assets/images/access-bg.webp") type("image/webp"),
+    url("./assets/images/access-bg.jpg") type("image/jpeg")
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+#access .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#access .access-details {
+  background-color: var(--background-color);
+  padding: 1rem;
+}
+
+#access .row {
+  gap: 2rem;
+}
+
+#access .access-details h4 {
+  text-align: start;
 }
 
 section#access th {
