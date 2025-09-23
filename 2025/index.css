@@ -1298,6 +1298,19 @@ section#sponsor h3 {
   font-size: 1.15rem;
 }
 
+#staff .container {
+  background-color: var(--staff-background-color);
+  padding: 3rem;
+  width: 50%;
+}
+
+#staff .table {
+  display: flex;
+  /* padding: 10px; */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 section#staff th,
 section#staff td {
   padding-right: 2rem;
