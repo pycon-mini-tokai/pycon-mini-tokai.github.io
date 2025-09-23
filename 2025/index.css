@@ -74,7 +74,8 @@ th {
   text-align: left;
 }
 
-.container {
+.container,
+.container-lg {
   margin-left: auto;
   margin-right: auto;
   width: 94%;
@@ -84,6 +85,7 @@ th {
   flex-direction: column;
 }
 
+/* Breakpoints: sm -- 576px -- md -- 900px -- lg */
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -99,7 +101,8 @@ th {
 }
 
 @media (min-width: 900px) {
-  .container {
+  .container,
+  .container-lg {
     max-width: 860px;
   }
 }
@@ -335,80 +338,114 @@ footer {
 .sp-only {
   display: none;
 }
-.flex {
-  display: flex;
-}
-.table {
+.timetable-wrapper {
   width: 100%;
   overflow-x: auto;
 }
-.table > div {
-  min-width: 700px;
+.timetable-grid {
+  --slot-height: 26px;
+  min-width: 720px;
+  display: grid;
+  grid-template-columns: 80px repeat(2, minmax(260px, 1fr));
+  grid-template-rows: 50px;
+  grid-auto-rows: var(--slot-height);
+  column-gap: 16px;
+  position: relative;
+  padding: 12px 0 12px 0;
 }
-.time1 {
+.timetable-grid > * {
+  grid-row: var(--row-start, auto) / span var(--row-span, 1);
+}
+.timetable-heading {
   font-weight: 700;
+  text-align: center;
+  align-self: center;
+  padding: 8px;
 }
-.time2 {
-  color: #555;
+.timetable-heading-time {
+  text-align: end;
 }
-.list-name {
+.timetable-grid > time {
+  grid-column: 1;
+  justify-self: end;
+  align-self: center;
+  padding: 15px 8px 0;
   font-weight: 700;
+  color: #333;
 }
-.padding-none {
-  margin: -5px 0;
-}
-a.event-box {
+.session {
+  align-self: stretch;
+  margin: 0 0 8px;
   display: block;
-  text-decoration: none;
+  text-align: center;
   color: var(--color);
   border: 1px solid #ddd;
-  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
   background-color: #fff;
-  padding: 3px;
-  text-align: start;
-  margin: 5px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  color: #333;
 }
-.event-box:hover {
-  cursor: pointer;
+.session-talk {
+  grid-column: 2;
+  --row-span: 8;
+}
+.session-workshop-short,
+.session-workshop-long {
+  grid-column: 3;
+}
+.session-workshop-short {
+  --row-span: 16;
+}
+.session-workshop-long {
+  --row-span: 24;
+}
+.session-misc {
+  --row-span: 2;
+}
+.session a {
+  color: inherit;
+}
+.session a:hover,
+.session a:focus {
+  text-decoration: underline;
+}
+a.session {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  text-decoration: none;
+  padding: 6px;
+  color: var(--color);
+}
+/*
+To be re-enabled after adding the modal back in
+a.session:hover,
+a.session:focus {
   box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
 }
-.event-box time {
+*/
+a.session .labels {
+  display: flex;
+  gap: 4px;
+}
+a.session time {
   display: block;
   margin-bottom: 4px;
   color: #555;
 }
-.event-box h3 {
+a.session h3 {
   margin: 0 0 4px;
   text-align: start;
 }
 .label {
   width: fit-content;
-  padding: 5px 8px;
-  margin-bottom: 4px;
+  padding: 4px 7px;
   color: #fff;
-  margin-right: 3px;
-}
-.widest {
-  height: 560px;
-}
-.wider {
-  height: 365px;
-}
-.wide {
-  height: 200px;
-}
-.narrow {
-  height: 170px;
-}
-.lunch {
-  height: 100px;
-  margin: 5px 0;
-}
-.none {
-  opacity: 0;
-}
-.border-none {
-  border: none;
+  margin-bottom: 4px;
+  border-radius: 4px;
 }
 .keynote {
   background-color: #5c5c5c;
@@ -433,50 +470,25 @@ a.event-box {
   color: #000;
   border: #000 1px solid;
 }
-.event-box .name {
+a.session .name {
+  margin: 0;
   color: #555;
 }
-.table li {
-  padding: 10px;
-  place-content: center;
-}
-.table .time {
-  min-width: 50px;
-  text-align: end;
-}
-.table .time li {
-  border-bottom: #ddd 1px solid;
-}
-.table .time li:nth-last-child(1) {
-  border: none;
-}
-.table li:nth-child(1) {
-  /* 項目名 */
-  text-align: center;
-  border-bottom: #aaa 1px solid;
-}
-.table p {
-  margin: 0;
-}
-.table ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.table .hall-a {
-  width: 50%;
-}
-.table .hall-b {
-  width: 50%;
-}
-@media (max-width: 900px) {
-  .sp-only {
+
+@media (min-width: 576px) {
+  .sm-only {
     display: block;
   }
-  #timetable .container:nth-child(2) {
-    max-width: none;
+}
+
+@media (min-width: 900px) {
+  .timetable-wrapper {
+    margin-inline: -16px;
+    padding-inline: 16px;
+    width: 100%;
   }
 }
+
 /********************************
  *** タイムテーブルの詳細表示 ***
  ************* ******************/

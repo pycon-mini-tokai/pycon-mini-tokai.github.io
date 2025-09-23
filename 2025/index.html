@@ -107,6 +107,7 @@
             <ul>
               <li><a href="#overview">開催概要</a></li>
               <li><a href="#access">会場案内</a></li>
+              <li><a href="#timetable">タイムテーブル</a></li>
               <li><a href="#coc">行動規範</a></li>
             </ul>
           </div>
@@ -298,14 +299,227 @@
         </div>
       </section>
       <section id="timetable">
-        <div class="container">
+        <div class="container-lg">
           <div class="row">
-            <div class="col">
+            <div class="col" style="width: 100%">
               <h2>タイムテーブル</h2>
-              <p>
-                プロポーザルの採否を9/14(日)に通知しました。<br />
-                タイムテーブルの公開まで今しばらくお待ちください。
-              </p>
+              <p class="sm-only">※タイムテーブルは左右にスクロールできます。</p>
+              <div class="timetable-wrapper scroll-auto">
+                <div class="timetable-grid">
+                  <div class="timetable-heading timetable-heading-time">
+                    時間
+                  </div>
+                  <div class="timetable-heading">トーク会場 (Room 1)</div>
+                  <div class="timetable-heading">
+                    ワークショップ会場 (Room 6+7)
+                  </div>
+                  <time style="--row-start: 2">9:45</time>
+                  <div
+                    class="session session-misc"
+                    style="--row-start: 2; --row-span: 2"
+                  >
+                    受付
+                  </div>
+                  <time style="--row-start: 4">10:15</time>
+                  <div
+                    class="session session-misc"
+                    style="--row-start: 4; --row-span: 2"
+                  >
+                    オープニング
+                  </div>
+                  <time style="--row-start: 6">10:30</time>
+                  <a
+                    class="session"
+                    href="#session-keynote"
+                    style="--row-start: 6; --row-span: 9"
+                  >
+                    <div class="labels">
+                      <div class="keynote label">キーノート</div>
+                    </div>
+                    <time datetime="50m">50分間</time>
+                    <h3>キーノート</h3>
+                    <p class="name">村橋 究理基</p>
+                  </a>
+                  <time style="--row-start: 15">11:20</time>
+                  <div class="session session-misc" style="--row-start: 15">
+                    休憩
+                  </div>
+                  <time style="--row-start: 17">11:35</time>
+                  <a
+                    class="session session-talk"
+                    href="#session-talk-1"
+                    style="--row-start: 17"
+                  >
+                    <div class="labels">
+                      <div class="talk label">トーク</div>
+                      <div class="beginner label">初級</div>
+                    </div>
+                    <time datetime="25m">25分間</time>
+                    <h3>PyScriptとOpenCVを使って<br />Webで画像処理AI</h3>
+                    <p class="name">高橋かずひと</p>
+                  </a>
+                  <a
+                    class="session session-workshop-short"
+                    href="#session-workshop-1"
+                    style="--row-start: 17"
+                  >
+                    <div class="labels">
+                      <div class="workshop label">ワークショップ</div>
+                      <div class="intermediate label">中級</div>
+                    </div>
+                    <time datetime="60m">60分間</time>
+                    <h3>パスワードレス認証の仕組み</h3>
+                    <p class="name">Ryo Kaji</p>
+                  </a>
+                  <time style="--row-start: 25">12:05</time>
+                  <a
+                    class="session session-talk"
+                    href="#session-talk-2"
+                    style="--row-start: 25"
+                  >
+                    <div class="labels">
+                      <div class="talk label">トーク</div>
+                      <div class="beginner label">初級</div>
+                    </div>
+                    <time datetime="25m">25分間</time>
+                    <h3>
+                      個人ではじめるマルチAIエージェント入門 〜LangChain ×
+                      LangGraphでアイデアを形にするステップ〜
+                    </h3>
+                    <p class="name">Tomoko FURUKI</p>
+                  </a>
+                  <time style="--row-start: 33">12:35</time>
+                  <div class="session session-misc" style="--row-start: 33">
+                    <time datetime="90m">90分間</time> ランチ
+                  </div>
+                  <time style="--row-start: 35">13:50</time>
+                  <a
+                    class="session session-talk"
+                    href="#session-talk-3"
+                    style="--row-start: 35"
+                  >
+                    <div class="labels">
+                      <div class="talk label">トーク</div>
+                      <div class="intermediate label">中級</div>
+                    </div>
+                    <time datetime="25m">25分間</time>
+                    <h3>Pythonでやってはいけない<br />やってみるべきこと</h3>
+                    <p class="name">aodag</p>
+                  </a>
+                  <a
+                    class="session session-workshop-long"
+                    href="#session-workshop-2"
+                    style="--row-start: 35"
+                  >
+                    <div class="labels">
+                      <div class="workshop label">ワークショップ</div>
+                      <div class="beginner label">初級</div>
+                    </div>
+                    <time datetime="90m">90分間</time>
+                    <h3>Pythonで作る小さなRedis</h3>
+                    <p class="name">hkws</p>
+                  </a>
+                  <time style="--row-start: 43">14:20</time>
+                  <a
+                    class="session session-talk"
+                    href="#session-talk-4"
+                    style="--row-start: 43"
+                  >
+                    <div class="labels">
+                      <div class="talk label">トーク</div>
+                      <div class="beginner label">初級</div>
+                    </div>
+                    <time datetime="25m">25分間</time>
+                    <h3>APIのテストデータを自動生成できるSchemathesisの紹介</h3>
+                    <p class="name">筒井 隆次</p>
+                  </a>
+                  <time style="--row-start: 51">14:50</time>
+                  <a
+                    class="session session-talk"
+                    href="#session-talk-5"
+                    style="--row-start: 51"
+                  >
+                    <div class="labels">
+                      <div class="talk label">トーク</div>
+                      <div class="intermediate label">中級</div>
+                    </div>
+                    <time datetime="25m">25分間</time>
+                    <h3>
+                      稼働中のバッチアプリケーションを依存性逆転の法則でモダナイズ
+                      - 型安全と堅牢なテストによるリプレイス戦略
+                    </h3>
+                    <p class="name">fujidomoe</p>
+                  </a>
+                  <time style="--row-start: 59">15:20</time>
+                  <div class="session session-misc" style="--row-start: 59">
+                    休憩
+                  </div>
+                  <time style="--row-start: 61">15:35</time>
+                  <a
+                    class="session session-talk"
+                    href="#session-talk-6"
+                    style="--row-start: 61"
+                  >
+                    <div class="labels">
+                      <div class="talk label">トーク</div>
+                      <div class="intermediate label">中級</div>
+                    </div>
+                    <time datetime="25m">25分間</time>
+                    <h3>型でつなぐ<br />FastAPI × フロントエンド活用術</h3>
+                    <p class="name">Koki Miura</p>
+                  </a>
+                  <a
+                    class="session session-workshop-short"
+                    href="#session-workshop-3"
+                    style="--row-start: 61"
+                  >
+                    <div class="labels">
+                      <div class="workshop label">ワークショップ</div>
+                      <div class="intermediate label">中級</div>
+                    </div>
+                    <time datetime="60m">60分間</time>
+                    <h3>PythonでOpenTelemetryの一歩目を体験ワークショップ</h3>
+                    <p class="name">nikkie</p>
+                  </a>
+                  <time style="--row-start: 69">16:05</time>
+                  <a
+                    class="session session-talk"
+                    href="#session-talk-7"
+                    style="--row-start: 69"
+                  >
+                    <div class="labels">
+                      <div class="talk label">トーク</div>
+                      <div class="beginner label">初級</div>
+                    </div>
+                    <time datetime="25m">25分間</time>
+                    <h3>
+                      Pythonで構築する人口移動ナレッジグラフ:
+                      GraphRagを用いた意味的地域検索への応用
+                    </h3>
+                    <p class="name">丹野良介</p>
+                  </a>
+                  <time style="--row-start: 77">16:35</time>
+                  <div class="session session-misc" style="--row-start: 77">
+                    休憩
+                  </div>
+                  <time style="--row-start: 79">16:45</time>
+                  <div class="session session-misc" style="--row-start: 79">
+                    クロージング
+                  </div>
+                  <time style="--row-start: 81">17:05</time>
+                  <div class="session session-misc" style="--row-start: 81">
+                    終了・退場
+                  </div>
+                  <time style="--row-start: 83">18:30</time>
+                  <div class="session session-misc" style="--row-start: 83">
+                    懇親会 (<a
+                      href="https://pycon-mini-tokai.connpass.com/event/369400/"
+                      target="_blank"
+                      >別途参加登録が必要です</a
+                    >)
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
