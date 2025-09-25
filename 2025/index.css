@@ -403,6 +403,10 @@ footer {
 .session-misc {
   --row-span: 2;
 }
+.session-misc-wide {
+  grid-column: 2 / span 2;
+  --row-span: 2;
+}
 .session a {
   color: inherit;
 }
@@ -420,14 +424,11 @@ a.session {
   padding: 6px;
   color: var(--color);
 }
-/*
-To be re-enabled after adding the modal back in
 a.session:hover,
 a.session:focus {
-  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
-*/
-a.session .labels {
+.labels {
   display: flex;
   gap: 4px;
 }
@@ -492,7 +493,7 @@ a.session .name {
 /********************************
  *** タイムテーブルの詳細表示 ***
  ************* ******************/
-#event-modal-background {
+#session-modal-background {
   position: fixed;
   top: 0;
   left: 0;
@@ -503,15 +504,21 @@ a.session .name {
   place-content: center;
   display: none;
 }
-#event-modal {
+#session-modal {
   margin: auto;
   padding: 20px;
   width: 80%;
+  max-width: 1200px;
   max-height: 80vh;
   background-color: #fff;
   overflow: hidden;
 }
-#event-modal-close {
+#session-modal-inner {
+  margin-top: -46px;
+  max-height: calc(80vh - 50px);
+  overflow-y: auto;
+}
+#session-modal-close {
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -521,20 +528,28 @@ a.session .name {
   text-align: center;
   margin: 0 0 0 auto;
 }
-#event-modal-close:focus,
-#event-modal-close:hover {
+#session-modal-close:focus,
+#session-modal-close:hover {
   opacity: 0.8;
 }
-#event-modal .name {
+#session-modal .labels {
+  margin-bottom: 4px;
+}
+#session-modal .session-duration {
   color: #555;
-  text-align: right;
+  margin-bottom: 8px;
 }
-.event-modal-talk {
-  display: none;
-  max-height: calc(80vh - 100px);
-  overflow-y: auto;
+#session-modal h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
 }
-.event-modal-talk hr {
+#session-modal p {
+  margin: 0 0 1em;
+}
+#session-modal .speaker-name {
+  font-weight: bold;
+}
+#session-modal hr {
   margin-top: 10px;
   border-top: rgb(255, 136, 0) 2px solid;
 }
