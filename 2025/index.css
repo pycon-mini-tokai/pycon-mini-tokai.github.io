@@ -1371,6 +1371,28 @@ section#sponsor h3 {
   width: 48px;
 }
 
+.staff-images {
+  position: relative;
+  min-height: 561px;
+}
+.staff-images > img {
+  position: absolute;
+}
+.staff-images > img:nth-child(1) {
+  top: 0px;
+  right: 0px;
+}
+
+.staff-images > img:nth-child(2) {
+  top: 187px;
+  right: 130px;
+}
+
+.staff-images > img:nth-child(3) {
+  top: 374px;
+  right: 260px;
+}
+
 @media (max-width: 600px) {
   #staff .row {
     padding: 1rem;
@@ -1387,6 +1409,7 @@ footer {
   text-align: center;
   background-color: var(--footer-background-color);
   color: var(--footer-color);
+  padding: 1rem;
 }
 
 @media (max-width: 900px) {
