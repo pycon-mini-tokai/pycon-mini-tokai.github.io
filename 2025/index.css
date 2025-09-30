@@ -1296,6 +1296,7 @@ section#sponsor h3 {
 }
 
 .sponsor h4 {
+  margin-top: 1.33rem;
   margin-bottom: 0.5rem;
   font-size: 1.15rem;
 }
@@ -1308,6 +1309,8 @@ section#sponsor h3 {
 
 .sponsor p {
   text-align: left;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 .patron h4 {
