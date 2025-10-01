@@ -1761,6 +1761,9 @@ a.session .name {
   color: #fff;
   text-align: center;
   margin: 0 0 0 auto;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
 }
 
 #session-modal-close:focus,
