@@ -527,13 +527,9 @@ a.session .name {
   color: #fff;
   text-align: center;
   margin: 0 0 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
   z-index: 1;
   cursor: pointer;
-  padding-bottom: 3px; /* Flexboxの中央配置により×が若干下に移動したように見えるため、視覚的な調整 */
 }
 #session-modal-close:focus,
 #session-modal-close:hover {
