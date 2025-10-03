@@ -1317,7 +1317,7 @@ section#access th {
   right: 0px;
 }
 
-#staff .secondary-deco::after{
+#staff .secondary-deco::after {
   bottom: 30%;
   left: 0px;
 }
@@ -1452,7 +1452,7 @@ section#sponsor h3 {
   opacity: 1;
   transition: opacity 300ms ease;
 }
-#staff .contact-btn:hover{
+#staff .contact-btn:hover {
   opacity: 0.9;
 }
 @media (max-width: 900px) {
@@ -1474,7 +1474,7 @@ section#sponsor h3 {
 }
 
 @media (max-width: 600px) {
-  #staff{
+  #staff {
     position: relative;
   }
   #staff .row {
@@ -1483,8 +1483,8 @@ section#sponsor h3 {
   .staff-images {
     position: relative;
     width: 100vw;
-    top: clamp( -80px, -13.3vw, -48px);
-    left: clamp( 60px, 16.6vw, 100px);
+    top: clamp(-80px, -13.3vw, -48px);
+    left: clamp(60px, 16.6vw, 100px);
   }
   .staff-images > img {
     position: relative;
@@ -1498,7 +1498,7 @@ section#sponsor h3 {
     gap: 0px;
     padding: 0rem;
   }
-  #staff .staff-table{
+  #staff .staff-table {
     padding-top: 1rem;
   }
   .staff-images > img:nth-child(1) {
@@ -1507,11 +1507,11 @@ section#sponsor h3 {
   }
   .staff-images > img:nth-child(2) {
     top: 0px;
-    right: clamp( 102px, 28.3vw, 170px);
+    right: clamp(102px, 28.3vw, 170px);
   }
   .staff-images > img:nth-child(3) {
     top: 0px;
-    right:clamp( 204px, 56.6vw, 340px);
+    right: clamp(204px, 56.6vw, 340px);
   }
 }
 
