@@ -418,7 +418,7 @@ header .time {
   top: clamp(-14px, -1.04vw, -20px);
 }
 
-header .images img {
+header .images picture {
   width: clamp(409px, 49.4vw, 950px);
 }
 
@@ -431,14 +431,14 @@ header .images {
   padding-top: calc(var(--navbar-height) / 2);
 }
 
-header .images img:nth-child(1) {
+header .images picture:nth-child(1) {
   position: relative;
   z-index: 2;
   display: block;
   margin-left: auto;
 }
 
-header .images img:nth-child(2) {
+header .images picture:nth-child(2) {
   position: relative;
   left: clamp(56.35px, 8.05vw, 110px);
   top: clamp(-40px, -2.9vw, -20.3px);
@@ -446,7 +446,7 @@ header .images img:nth-child(2) {
   margin-left: auto;
 }
 
-header .images img:nth-child(3) {
+header .images picture:nth-child(3) {
   position: relative;
   right: clamp(187.53px, 26.79vw, 366px);
   top: clamp(-150px, -7.32vw, -50px);
@@ -583,7 +583,7 @@ header .place3 {
     top: clamp(-14px, -1.04vw, -20px);
   }
 
-  header .images img {
+  header .images picture {
     width: clamp(409px, 102.4vw, 768px);
   }
 
@@ -596,7 +596,7 @@ header .place3 {
     overflow-x: hidden;
   }
 
-  header .images img:nth-child(1) {
+  header .images picture:nth-child(1) {
     position: relative;
     z-index: 2;
     display: block;
@@ -604,14 +604,14 @@ header .place3 {
     right: -28vw;
   }
 
-  header .images img:nth-child(2) {
+  header .images picture:nth-child(2) {
     position: relative;
     margin-right: -12.7vw;
     margin-top: -6.11vw;
     z-index: 1;
   }
 
-  header .images img:nth-child(3) {
+  header .images picture:nth-child(3) {
     position: relative;
     right: 16.6vw;
     margin-top: -17.2vw;
