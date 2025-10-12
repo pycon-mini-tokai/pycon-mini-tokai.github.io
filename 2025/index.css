@@ -1784,6 +1784,7 @@ a.session .name {
 #session-modal h4 {
   margin-top: 0;
   margin-bottom: 8px;
+  text-align: left;
 }
 
 #session-modal p {
