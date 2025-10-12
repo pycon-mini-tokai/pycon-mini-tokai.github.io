@@ -1324,7 +1324,14 @@ section#sponsor h3 {
 }
 
 .sponsor {
+  margin: 0 auto;
   text-align: center;
+}
+
+@media (min-width: 576px) {
+  .sponsor-pksha {
+    width: 50%;
+  }
 }
 
 .sponsor h4 {
@@ -1337,6 +1344,17 @@ section#sponsor h3 {
   margin: 0 auto;
   padding: 1rem;
   width: 100%;
+}
+
+.sponsor-beproud img,
+.sponsor-pythoned img {
+  max-width: 300px;
+}
+
+.sponsor-pksha img {
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: 330px;
 }
 
 .sponsor p {
