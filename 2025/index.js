@@ -68,6 +68,11 @@ function initializeTimetableModal() {
     return element;
   };
 
+  const closeModal = () => {
+    modalBackground.style.display = "none";
+    history.replaceState({}, "", "#");
+  };
+
   const populateSessionModal = (modalId) => {
     const sessionId = modalId.replace(/^session-/, "");
     const session = sessionsById.get(sessionId);
@@ -97,10 +102,13 @@ function initializeTimetableModal() {
 
   document
     .getElementById("session-modal-close")
-    .addEventListener("click", () => {
-      modalBackground.style.display = "none";
-      history.replaceState({}, "", "#");
-    });
+    .addEventListener("click", closeModal);
+
+  modalBackground.addEventListener("click", (e) => {
+    if (e.target === modalBackground) {
+      closeModal();
+    }
+  });
 
   for (const eventBox of document.querySelectorAll("a.session")) {
     eventBox.addEventListener("click", (e) => {
