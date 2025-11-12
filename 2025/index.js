@@ -37,6 +37,8 @@ function initializeTimetableModal() {
   const speakerNameElement = speakerInfoElement.querySelector(".speaker-name");
   const speakerProfileElement =
     speakerInfoElement.querySelector(".speaker-profile");
+  const speakerMaterialElement =
+    speakerInfoElement.querySelector(".speaker-material");
 
   const sessionsById = new Map(
     JSON.parse(document.getElementById("sessions").textContent || "[]").map(
@@ -96,6 +98,10 @@ function initializeTimetableModal() {
     abstractElement.innerHTML = session.abstract || "";
     speakerNameElement.textContent = session.speaker || "";
     speakerProfileElement.innerHTML = session.profile || "";
+    const material = session.material
+      ? `<a href="${session.material}" target="_blank" rel="noopener noreferrer">発表資料</a>`
+      : "";
+    speakerMaterialElement.innerHTML = material;
 
     return true;
   };
