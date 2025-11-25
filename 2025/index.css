@@ -1611,6 +1611,11 @@ footer {
   --row-span: 24;
 }
 
+.session-lt {
+  grid-column: 2;
+  --row-span: 8;
+}
+
 .session-misc {
   --row-span: 2;
 }
@@ -1675,6 +1680,10 @@ a.session h3 {
 
 .talk {
   background-color: #427aaf;
+}
+
+.lt {
+  background-color: #5eaff9;
 }
 
 .workshop {

@@ -50,6 +50,7 @@ function initializeTimetableModal() {
     キーノート: "keynote",
     トーク: "talk",
     ワークショップ: "workshop",
+    LT: "lt",
   };
 
   const sessionLevelClassMap = {
