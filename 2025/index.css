@@ -1613,7 +1613,7 @@ footer {
 
 .session-lt {
   grid-column: 2;
-  --row-span: 6;
+  --row-span: 8;
 }
 
 .session-misc {
